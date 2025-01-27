@@ -6,7 +6,7 @@
 
     <VerticalStackLayout>
 
-        <Entry Placeholder="Okul Adı" />
+        <Entry Placeholder="Okul Adı" PlaceholderColor="White" />
         <HorizontalStackLayout Margin="10,20,10,10">
             <Label FontSize="16" TextColor="Red" Text="Okul Türü:" />
             <Picker x:Name="picker1" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" SelectedIndex="4" >
