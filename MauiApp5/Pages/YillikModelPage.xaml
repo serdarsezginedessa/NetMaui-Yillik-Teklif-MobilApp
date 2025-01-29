@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp5.Pages.YillikModelPage"
+             Title="Model Bilgileri">
+    <VerticalStackLayout>
+        <Picker x:Name="PicYpmSekli" Title="Yapım Şekli"  TextColor="#E28944" >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Okul Tek Yıllık</x:String>
+                    <x:String>Sınıf Yıllık</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="PicKpkModeli" Title="Kapak Modeli"  TextColor="#E28944" >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Kepli Model</x:String>
+                    <x:String>D Model</x:String>
+                    <x:String>S Model</x:String>
+                    <x:String>Z Model</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="PicKpkSekli" Title="Kapak Şekli"  TextColor="#E28944" >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Standart</x:String>
+                    <x:String>Yandan</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="PicKpkgvdRengi" Title="Kapak Gövde Rengi" TextColor="#E28944" >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Siyah</x:String>
+                    <x:String>Beyaz</x:String>
+                    <x:String>Kırmızı</x:String>
+                    <x:String>Sarı</x:String>
+                    <x:String>Mavi</x:String>
+                    <x:String>Yeşil</x:String>
+                    <x:String>Kahverengi</x:String>
+                    <x:String>Turuncu</x:String>
+                    <x:String>Krem</x:String>
+                    <x:String>Bordo</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="PicKpkFtCrvRengi" Title="Kapak Resim Çerçeve Rengi" TextColor="#E28944"  >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Siyah</x:String>
+                    <x:String>Beyaz</x:String>
+                    <x:String>Kırmızı</x:String>
+                    <x:String>Sarı</x:String>
+                    <x:String>Mavi</x:String>
+                    <x:String>Yeşil</x:String>
+                    <x:String>Kahverengi</x:String>
+                    <x:String>Turuncu</x:String>
+                    <x:String>Krem</x:String>
+                    <x:String>Bordo</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="PicKepRengi" Title="Kep Rengi" TextColor="#E28944"  >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Siyah</x:String>
+                    <x:String>Beyaz</x:String>
+                    <x:String>Kırmızı</x:String>
+                    <x:String>Sarı</x:String>
+                    <x:String>Mavi</x:String>
+                    <x:String>Yeşil</x:String>
+                    <x:String>Kahverengi</x:String>
+                    <x:String>Turuncu</x:String>
+                    <x:String>Krem</x:String>
+                    <x:String>Bordo</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="PicKlseTuru" Title="Klişe Türü" TextColor="#E28944"   >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Sublimasyon</x:String>
+                    <x:String>Asit İndirme</x:String>
+                    <x:String>Döküm</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="PicKpkEkl" Title="Kapak Ekleri" TextColor="#E28944"   >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Mıktanıslı</x:String>
+                    <x:String>Püsküllü</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+    </VerticalStackLayout>
+</ContentPage>

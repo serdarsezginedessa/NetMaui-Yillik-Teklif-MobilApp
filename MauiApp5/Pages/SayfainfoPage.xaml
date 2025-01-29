@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp5.Pages.SayfainfoPage"
+             Title="Sayfa Bilgileri">
+    <VerticalStackLayout>
+        <Picker x:Name="PicSyfSablonu" Title="Sayfa Şablonu" TextColor="#E28944"   >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Geçen Yılki Model</x:String>
+                    <x:String>Yeni Model</x:String>
+                    <x:String>Katalogdan Seçilecek</x:String>
+                    <x:String>Örnek Gönderdiler</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="PicKgtGr" Title="Kagıt Gr." TextColor="#E28944"  >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>135 gr. Kuşe Kağıt</x:String>
+                    <x:String>170 gr. Kuşe Kağıt</x:String>
+                    <x:String>170 gr. Özel Kağıt</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Picker x:Name="PicOgrSyfSay" Title="Öğrenciye Ayrılan Sayfa Sayısı" TextColor="#E28944" >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Yarım Sayfa</x:String>
+                    <x:String>Tam Sayfa</x:String>
+                    <x:String>İki Sayfa</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Entry x:Name="entMgzSyfSay" Placeholder="Magazin Sayfa Sayısı"/>
+        <Entry x:Name="entSyfSay" Placeholder="Sayfa Sayısı"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

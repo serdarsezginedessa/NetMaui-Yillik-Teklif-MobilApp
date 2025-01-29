@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell
+<!--<Shell
     x:Class="MauiApp5.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiApp5"
     Shell.FlyoutBehavior="Disabled"
     Title="MauiApp5">
-
-    <ShellContent
+    
+    <ShellContent        
         Title="Yıllık Teklif"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+</Shell>-->
+<Shell
+    x:Class="MauiApp5.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp5.Pages"
+    >
+
+    <FlyoutItem Title="Teklif" >
+        <ShellContent Title="Okul Bilgileri" Icon="school01.png"
+            ContentTemplate="{DataTemplate local:OkulPage}"/>
+        
+        <ShellContent Title="Yıllık Model Bilgileri" Icon="yearbook01.png"
+                      ContentTemplate="{DataTemplate local:YillikModelPage}"/>
+        
+        <ShellContent Title="Sayfa Bilgileri" Icon="page.png"
+                      ContentTemplate="{DataTemplate local:SayfainfoPage}"/>
+        
+        <ShellContent Title="Fotoğraf Bilgileri" Icon="photo01.png"
+                      ContentTemplate="{DataTemplate local:FotografPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Yıllık Modelleri">
+        <ShellContent Title="okul" Icon="yearbook01.png"
+                      ContentTemplate="{DataTemplate local:YillikModelPage}"/>
+        <ShellContent Title =" Albüm Modelleri" Icon="page.png"
+                      ContentTemplate="{DataTemplate local:SayfainfoPage}"/>
+    </FlyoutItem>
 </Shell>
+

@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp5.MainPage">
 
+    
+    <HorizontalStackLayout Margin="10,0,0,0">
 
-    <VerticalStackLayout>
-
-        <Entry Placeholder="Okul Adı" PlaceholderColor="White" />
-        <HorizontalStackLayout Margin="10,20,10,10">
-            <Label FontSize="16" TextColor="Red" Text="Okul Türü:" />
-            <Picker x:Name="picker1" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" SelectedIndex="4" >
+        <!--<Entry Placeholder="Okul Adı" FontSize="20"/>
+        <HorizontalStackLayout Spacing="20">
+            <Label FontSize="16" TextColor="Red" Text="Okul Türü:"/>
+            <Picker x:Name="picker1" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" >
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Kreş</x:String>
@@ -23,7 +23,7 @@
                 </Picker.ItemsSource>
             </Picker>
 
-            <Label Text="Okul Tipi:" FontSize="16" TextColor="Red" />
+            <Label Text="Okul Tipi:" FontSize="16" TextColor="Red" HorizontalOptions="End"/>
             <Picker x:Name="picker2" Title="Seçiniz">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
@@ -34,6 +34,8 @@
 
                 </Picker.ItemsSource>
             </Picker>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="30">
             <Label Text="Şehir:" FontSize="16" TextColor="Red"/>
             <Picker x:Name="picker3" Title="Seçiniz">
                 <Picker.ItemsSource>
@@ -44,10 +46,9 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-        </HorizontalStackLayout>
-        <HorizontalStackLayout Margin="10,20,10,10">
+        
         <Label Text="Yapım Şekli:" FontSize="16" TextColor="Red"/>
-        <Picker x:Name="picker4" Title="Seçiniz" AutomationProperties.IsInAccessibleTree="False">
+        <Picker x:Name="picker4" Title="Seçiniz" CharacterSpacing="5">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Okul Tek Yıllık</x:String>
@@ -56,14 +57,15 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
-            
-        
-        
-        <Label Text="Kapak Modeli:" FontSize="16" TextColor="Red"/>
-        <Picker x:Name="picker5" Title="Seçiniz" AutomationProperties.IsInAccessibleTree="False">
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="20">
+
+
+            <Label Text="Kapak Modeli:" FontSize="16" TextColor="Red"/>
+        <Picker x:Name="picker5" Title="Seçiniz">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
-                    <x:String>Kapli Model</x:String>
+                    <x:String>Kepli Model</x:String>
                     <x:String>D Model</x:String>
                     <x:String>S Model</x:String>
                     <x:String>Z Model</x:String>
@@ -72,19 +74,18 @@
             </Picker.ItemsSource>
         </Picker>        
         <Label Text="Kapak Şekli:" FontSize="16" TextColor="Red"/>
-        <Picker x:Name="picker6" Title="Seçiniz" AutomationProperties.IsInAccessibleTree="False">
+        <Picker x:Name="picker6" Title="Seçiniz">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Standart</x:String>
-                    <x:String>Yandan</x:String>
-                    
+                    <x:String>Yandan</x:String>                    
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
         </HorizontalStackLayout>
-        <HorizontalStackLayout Margin="10,20,10,10">
-        <Label FontSize="16" TextColor="Red" Text="Kapak Gövde Rengi:" />
-        <Picker x:Name="picker7" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" SelectedIndex="4" >
+        <HorizontalStackLayout>
+            <Label FontSize="16" TextColor="Red" Text="Kapak Gövde Rengi:" />
+        <Picker x:Name="picker7" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Siyah</x:String>
@@ -102,8 +103,8 @@
         </Picker>
         
         
-        <Label FontSize="16" TextColor="Red" Text="Kapak Resim Çerçeve Rengi:" />
-        <Picker x:Name="picker8" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" SelectedIndex="4" >
+        <Label FontSize="16" TextColor="Red" Text="Çerçeve Rengi:" />
+        <Picker x:Name="picker8" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" >
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Siyah</x:String>
@@ -119,8 +120,10 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
         <Label FontSize="16" TextColor="Red" Text="Kep Rengi:" />
-        <Picker x:Name="picker9" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" SelectedIndex="4" >
+        <Picker x:Name="picker9" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" >
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Siyah</x:String>
@@ -136,10 +139,9 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
-        </HorizontalStackLayout>
-        <HorizontalStackLayout Margin="10,20,10,10">
+        
             <Label FontSize="16" TextColor="Red" Text="Klişe Türü:" />
-        <Picker x:Name="picker10" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" SelectedIndex="4" >
+        <Picker x:Name="picker10" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944"  >
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Sublimasyon</x:String>
@@ -148,9 +150,10 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
-        
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
         <Label FontSize="16" TextColor="Red" Text="Kapak Ekleri:" />
-        <Picker x:Name="picker11" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" SelectedIndex="4" >
+        <Picker x:Name="picker11" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944"  >
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Mıktanıslı</x:String>
@@ -159,7 +162,7 @@
             </Picker.ItemsSource>
         </Picker>
         <Label FontSize="16" TextColor="Red" Text="Sayfa Şablonu:" />
-        <Picker x:Name="picker12" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944" SelectedIndex="4" >
+        <Picker x:Name="picker12" Title="Seçiniz" TextColor="#E28944" TitleColor="#E28944"  >
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Geçen Yılki Model</x:String>
@@ -172,6 +175,290 @@
         </HorizontalStackLayout>
         <HorizontalStackLayout Margin="0,20" HorizontalOptions="Center">
         <Button Text="Hesapla" WidthRequest="220" HeightRequest="60"/>
+        </HorizontalStackLayout>-->
+        
+        
+        <!--<FlexLayout Direction="Column">
+            <VerticalStackLayout Spacing="10">
+                
+                <Label Text="Okul Türü:" FontSize="16" TextColor="Red" />
+                <Label Text="Okul Tipi:" FontSize="16" TextColor="Red"/>
+                <Label Text="Şehir:" FontSize="16" TextColor="Red"/>
+                <Label Text="Yapım Şekli:" FontSize="16" TextColor="Red"/>
+                <Label Text="Kapak Modeli:" FontSize="16" TextColor="Red"/>
+                <Label Text="Kapak Şekli:" FontSize="16" TextColor="Red"/>
+                <Label Text="Gövde Rengi:" FontSize="16" TextColor="Red"/>
+                <Label Text="Çerçeve Rengi:" FontSize="16" TextColor="Red"/>
+                <Label Text="Kep Rengi:" FontSize="16" TextColor="Red"/>
+                <Label  Text="Klişe Türü:" FontSize="16" TextColor="Red"/>
+                <Label Text="Kapak Ekleri:" FontSize="16" TextColor="Red"/>
+                <Label Text="Sayfa Şablonu:" FontSize="16" TextColor="Red"/>
+            </VerticalStackLayout>
+        </FlexLayout>-->
+        <FlexLayout  Direction="Column" MaximumWidthRequest="180">
+            <Entry x:Name="EntOkulAdi" FontAttributes="Bold" Placeholder="Okul Adı" FontSize="16"/>
+            <Entry x:Name="EntYetkili" FontAttributes="Bold" Placeholder="Yetkili" FontSize="16"/>
+            
+            <Picker x:Name="PicOkulTuru" Title="Okul Türü" TextColor="#E28944"  >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Kreş</x:String>
+                        <x:String>Anaokul</x:String>
+                        <x:String>İlkokul</x:String>
+                        <x:String>Ortaokul</x:String>
+                        <x:String>Lise</x:String>
+                        <x:String>Fakülte</x:String>
+                        <x:String>MYO</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicOkulTipi" Title="Okul Tipi" TextColor="#E28944">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Devlet</x:String>
+                        <x:String>Özel</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicSehir" Title="Şehir"  TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Ankara</x:String>
+                        <x:String>İstanbul</x:String>
+                        <x:String>İzmir</x:String>
+                        <x:String>Konya</x:String>
+                        <x:String>Antalya</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="PicSinifSayisi" Title="Sınıf Sayısı"  TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>8</x:String>
+                        <x:String>9</x:String>
+                        <x:String>10</x:String>
+                        <x:String>11</x:String>
+                        <x:String>12</x:String>
+                        <x:String>13</x:String>
+                        <x:String>14</x:String>
+                        <x:String>15</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker> 
+            <Picker x:Name="PicSinifOgrtmSayisi" Title="Sınıf Öğretmeni Sayısı"  TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>8</x:String>
+                        <x:String>9</x:String>
+                        <x:String>10</x:String>
+                        <x:String>11</x:String>
+                        <x:String>12</x:String>
+                        <x:String>13</x:String>
+                        <x:String>14</x:String>
+                        <x:String>15</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicYpmSekli" Title="Yapım Şekli"  TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Okul Tek Yıllık</x:String>
+                        <x:String>Sınıf Yıllık</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicKpkModeli" Title="Kapak Modeli"  TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Kepli Model</x:String>
+                        <x:String>D Model</x:String>
+                        <x:String>S Model</x:String>
+                        <x:String>Z Model</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicKpkSekli" Title="Kapak Şekli"  TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Standart</x:String>
+                        <x:String>Yandan</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicKpkgvdRengi" Title="Kapak Gövde Rengi" TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Siyah</x:String>
+                        <x:String>Beyaz</x:String>
+                        <x:String>Kırmızı</x:String>
+                        <x:String>Sarı</x:String>
+                        <x:String>Mavi</x:String>
+                        <x:String>Yeşil</x:String>
+                        <x:String>Kahverengi</x:String>
+                        <x:String>Turuncu</x:String>
+                        <x:String>Krem</x:String>
+                        <x:String>Bordo</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicKpkFtCrvRengi" Title="Kapak Resim Çerçeve Rengi" TextColor="#E28944"  >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Siyah</x:String>
+                        <x:String>Beyaz</x:String>
+                        <x:String>Kırmızı</x:String>
+                        <x:String>Sarı</x:String>
+                        <x:String>Mavi</x:String>
+                        <x:String>Yeşil</x:String>
+                        <x:String>Kahverengi</x:String>
+                        <x:String>Turuncu</x:String>
+                        <x:String>Krem</x:String>
+                        <x:String>Bordo</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicKepRengi" Title="Kep Rengi" TextColor="#E28944"  >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Siyah</x:String>
+                        <x:String>Beyaz</x:String>
+                        <x:String>Kırmızı</x:String>
+                        <x:String>Sarı</x:String>
+                        <x:String>Mavi</x:String>
+                        <x:String>Yeşil</x:String>
+                        <x:String>Kahverengi</x:String>
+                        <x:String>Turuncu</x:String>
+                        <x:String>Krem</x:String>
+                        <x:String>Bordo</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicKlseTuru" Title="Klişe Türü" TextColor="#E28944"   >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Sublimasyon</x:String>
+                        <x:String>Asit İndirme</x:String>
+                        <x:String>Döküm</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicKpkEkl" Title="Kapak Ekleri" TextColor="#E28944"   >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Mıktanıslı</x:String>
+                        <x:String>Püsküllü</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicSyfSablonu" Title="Sayfa Şablonu" TextColor="#E28944"   >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Geçen Yılki Model</x:String>
+                        <x:String>Yeni Model</x:String>
+                        <x:String>Katalogdan Seçilecek</x:String>
+                        <x:String>Örnek Gönderdiler</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="PicCkmYeri" Title="Çekim Yeri" TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Stüdyo</x:String>
+                        <x:String>Okul</x:String>
+                        <x:String>Stüdyo Okul</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="PicYlkFotSay" Title="Yıllık Fotoğraf Sayısı" TextColor="#E28944"  >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>       
+            
+
+        </FlexLayout>
+        <VerticalStackLayout Margin="10,0,0,0">
+            <Picker x:Name="PicKgtGr" Title="Kagıt Gr." TextColor="#E28944"  >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>135 gr. Kuşe Kağıt</x:String>
+                        <x:String>170 gr. Kuşe Kağıt</x:String>
+                        <x:String>170 gr. Özel Kağıt</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="PicOgrSyfSay" Title="Öğrenciye Ayrılan Sayfa Sayısı" TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Yarım Sayfa</x:String>
+                        <x:String>Tam Sayfa</x:String>
+                        <x:String>İki Sayfa</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="PicAileFot" Title="Hediye Aile Fotoğrafı" TextColor="#E28944"  >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Var</x:String>
+                        <x:String>Yok</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="PicYilSonFtVid" Title="Yıl Sonu Fotoğraf Video" TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Var</x:String>
+                        <x:String>Yok</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Entry x:Name="entOgrSay" Placeholder="Öğrenci Sayısı" ToolTipProperties.Text="Öğrenci Sayısı" Text=""/>
+            <Entry x:Name="entKiFotSay" Placeholder="Kişisel Fotoğraf Sayısı"/>
+            <Entry x:Name="entEtkFotSay" Placeholder="Etkinlik Fotoğraf Sayısı"/>
+            <Entry x:Name="entSyfSay" Placeholder="Sayfa Sayısı"/>
+            <Entry x:Name="entMgzSyfSay" Placeholder="Magazin Sayfa Sayısı"/>
+            
+            <!--<Button  x:Name="btnHesapla" Text="Hesapla" MaximumWidthRequest="180" MaximumHeightRequest="80" FontSize="19" Margin="20,30,0,0" Clicked="Button_Clicked"/>-->
+            <Label x:Name="LblFiyat" Text=" Fiyat TL" TextColor="Red" FontAttributes="Bold" FontSize="25" Margin="30,20,0,0"/>
+        </VerticalStackLayout>
+        <HorizontalStackLayout Margin="0,0,0,50" VerticalOptions="End" HorizontalOptions="Center">
+            
         </HorizontalStackLayout>
-    </VerticalStackLayout>
+
+    </HorizontalStackLayout>
+    
+
+
 </ContentPage>

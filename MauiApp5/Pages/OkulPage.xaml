@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp5.Pages.OkulPage"
+             Title="Okul Bilgileri">
+    <VerticalStackLayout>
+
+
+        <FlexLayout  Direction="Column">
+            <Entry x:Name="EntOkulAdi" FontAttributes="Bold" Placeholder="Okul Adı" FontSize="16"/>
+            <Entry x:Name="EntYetkili" FontAttributes="Bold" Placeholder="Yetkili" FontSize="16"/>
+
+            <Picker x:Name="PicOkulTuru" Title="Okul Türü" TextColor="#E28944"  >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Kreş</x:String>
+                        <x:String>Anaokul</x:String>
+                        <x:String>İlkokul</x:String>
+                        <x:String>Ortaokul</x:String>
+                        <x:String>Lise</x:String>
+                        <x:String>Fakülte</x:String>
+                        <x:String>MYO</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicOkulTipi" Title="Okul Tipi" TextColor="#E28944">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Devlet</x:String>
+                        <x:String>Özel</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="PicSehir" Title="Şehir"  TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Ankara</x:String>
+                        <x:String>İstanbul</x:String>
+                        <x:String>İzmir</x:String>
+                        <x:String>Konya</x:String>
+                        <x:String>Antalya</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="PicSinifSayisi" Title="Sınıf Sayısı"  TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>8</x:String>
+                        <x:String>9</x:String>
+                        <x:String>10</x:String>
+                        <x:String>11</x:String>
+                        <x:String>12</x:String>
+                        <x:String>13</x:String>
+                        <x:String>14</x:String>
+                        <x:String>15</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="PicSinifOgrtmSayisi" Title="Sınıf Öğretmeni Sayısı"  TextColor="#E28944" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>8</x:String>
+                        <x:String>9</x:String>
+                        <x:String>10</x:String>
+                        <x:String>11</x:String>
+                        <x:String>12</x:String>
+                        <x:String>13</x:String>
+                        <x:String>14</x:String>
+                        <x:String>15</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Entry x:Name="entOgrSay" Placeholder="Öğrenci Sayısı" ToolTipProperties.Text="Öğrenci Sayısı" Text=""/>
+        </FlexLayout>
+    </VerticalStackLayout>
+</ContentPage>
