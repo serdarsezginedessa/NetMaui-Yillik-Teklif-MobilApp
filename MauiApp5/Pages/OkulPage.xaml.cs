@@ -6,4 +6,5 @@ public partial class OkulPage : ContentPage
 	{
 		InitializeComponent();
 	}
+	
 }

@@ -5,5 +5,7 @@ public partial class SayfainfoPage : ContentPage
 	public SayfainfoPage()
 	{
 		InitializeComponent();
+		
+		
 	}
 }
